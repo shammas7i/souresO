@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creator. Engineer — Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js" class="particles-bg"></div>
+
+  <button id="settingsBtn" class="settings-btn">⚙️</button>
+
+  <div id="settingsPanel" class="settings-panel hidden" aria-hidden="true">
+    <h3>Settings</h3>
+    <label>Theme: <button id="themeToggle" class="small-btn">Toggle</button></label>
+    <label>Accent color: <input id="accentColor" type="color" value="#00f7ff"></label>
+    <label>Animations: <input id="animToggle" type="checkbox" checked> Enabled</label>
+    <label>Font size: 
+      <select id="fontSize">
+        <option value="16">Normal</option>
+        <option value="18">Large</option>
+        <option value="20">Bigger</option>
+      </select>
+    </label>
+    <button id="closeSettings" class="small-btn">Close</button>
+  </div>
+
+  <main class="site">
+    <header class="hero">
+      <div class="hero-content">
+        <h1 id="siteTitle">Creator. Engineer</h1>
+        <p id="typewriter" class="typewriter"></p>
+        <div class="hero-cta">
+          <a class="btn" href="#creations">View Creations</a>
+          <a class="btn ghost" href="#about">About</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p>I'm Shammas — Creator. Engineer. I build gadgets, make videos, and create cool interactive projects. This is a polished showcase template with animations and custom settings.</p>
+      </div>
+    </section>
+
+    <section id="creations" class="section creations">
+      <div class="container">
+        <h2>Creations</h2>
+        <div class="grid" id="gallery">
+          <!-- Cards will be injected by script -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Connect</h2>
+        <p>Instagram: <a href="https://instagram.com/notshamzz" target="_blank">@notshamzz</a> · YouTube: <a href="https://youtube.com" target="_blank">Vibrant Flix</a></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Creator. Engineer</p>
+    
+    <div class="social-links">
+        <a href="https://instagram.com/shammazze" target="_blank" class="social-icon instagram">Instagram</a>
+        <a href="https://youtube.com/@eye-y4o?si=9WSlhV_oH7YZNUsy" target="_blank" class="social-icon youtube">YouTube</a>
+    </div>
+    
+</footer>
+  </main>
+
+  <!-- Modal for preview -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modalClose" class="modal-close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
